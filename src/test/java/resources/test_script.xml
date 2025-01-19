@@ -1,0 +1,12 @@
+<suite name="Assignment_02">
+    <parameter name="browser" value="chrome" />
+    <test name="LoginScenario">
+        <classes>
+            <class name="pom.PracticeForm" />
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="pom.TestListener" />
+    </listeners>
+</suite>
