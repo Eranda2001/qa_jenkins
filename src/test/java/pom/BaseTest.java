@@ -15,7 +15,7 @@ public class BaseTest {
 
     @BeforeSuite
     @Parameters({"browser"})
-    public void setup(String browser) {
+    public void setup(@Optional("chrome") String browser) {
         if(browser.equalsIgnoreCase("chrome")) webDriverShared.set(new ChromeDriver());
         else if (browser.equalsIgnoreCase("firefox")) webDriverShared.set(new FirefoxDriver());
         else if (browser.equalsIgnoreCase("edge")) webDriverShared.set(new ChromeDriver());
